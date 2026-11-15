@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maré e Brasa | Marisco e grelhados em Maputo</title>
+  <meta name="description" content="Marisco e grelhados na brasa em Maputo. Veja o menu, o horário e reserve mesa pelo WhatsApp.">
+  <meta name="theme-color" content="#0A3550">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Partilha (WhatsApp, Facebook): troca O-TEU-SITE pelo endereço real do site -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_MZ">
+  <meta property="og:title" content="Maré e Brasa | Marisco e grelhados em Maputo">
+  <meta property="og:description" content="Camarão, caranguejo e peixe na brasa. Reserve mesa pelo WhatsApp.">
+  <meta property="og:image" content="https://O-TEU-SITE.pages.dev/hero.jpg">
+  <link rel="canonical" href="https://O-TEU-SITE.pages.dev/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Dados para o Google (aparece nas pesquisas). Mantém igual ao horário em script.js -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Maré e Brasa",
+    "servesCuisine": ["Marisco", "Grelhados", "Moçambicana"],
+    "priceRange": "$$",
+    "telephone": "+258841234567",
+    "image": "https://O-TEU-SITE.pages.dev/hero.jpg",
+    "url": "https://O-TEU-SITE.pages.dev/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avenida da Marginal",
+      "addressLocality": "Maputo",
+      "addressCountry": "MZ"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Sunday"], "opens": "11:00", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "11:00", "closes": "23:00" }
+    ]
+  }
+  </script>
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="saltar" href="#conteudo">Saltar para o conteúdo</a>
+
+  <div class="aviso">
+    <div class="wrap aviso-in">
+      <span data-estado>Horário no fim da página</span>
+      <a href="#" data-tel-link>Ligar <span data-tel></span></a>
+    </div>
+  </div>
+
+  <header class="topo" id="topo">
+    <div class="wrap barra">
+      <a class="marca" href="#inicio" aria-label="Maré e Brasa, início">
+        <span class="marca-nome" data-nome>Maré e Brasa</span>
+      </a>
+      <button class="burger" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu"><span></span></button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#menu">Menu</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#galeria">Fotos</a>
+        <a href="#perguntas">Perguntas</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn btn-piri btn-peq" href="#reservas">Reservar mesa</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- 1. Abertura -->
+    <section class="hero" id="inicio" style="--img:url('hero.jpg')">
+      <div class="wrap hero-in">
+        <p class="etiqueta etiqueta-sol">Marisco e grelhados · Maputo</p>
+        <h1>Camarão, caranguejo e peixe na brasa.</h1>
+        <p class="sub">Cozinha moçambicana feita com o produto do dia. Mesa na sala ou na esplanada.</p>
+        <div class="acoes">
+          <a class="btn btn-piri" href="#reservas">Reservar mesa</a>
+          <a class="btn btn-linha" href="#" data-wa data-msg="Olá! Gostaria de fazer um pedido.">Pedir pelo WhatsApp</a>
+        </div>
+        <p class="estado" data-estado></p>
+      </div>
+    </section>
+    <div class="capulana" aria-hidden="true"></div>
+
+    <!-- 2. Pratos da casa -->
+    <section class="secao" id="destaques">
+      <div class="wrap">
+        <header class="cab reveal">
+          <p class="etiqueta">Da casa</p>
+          <h2>Para começar a escolher</h2>
+        </header>
+        <div class="tiles">
+          <article class="tile tile-a reveal" style="--img:url('prato-1.jpg')">
+            <div class="tile-txt">
+              <h3>Camarão tigre grelhado</h3>
+              <p>Na brasa, com manteiga de alho, piri-piri e limão.</p>
+              <span class="preco">850 MT</span>
+            </div>
+          </article>
+          <article class="tile tile-b reveal" style="--img:url('prato-2.jpg')">
+            <div class="tile-txt">
+              <h3>Caril de caranguejo</h3>
+              <p>Leite de coco e caril, com arroz.</p>
+              <span class="preco">720 MT</span>
+            </div>
+          </article>
+          <article class="tile tile-c reveal" style="--img:url('prato-3.jpg')">
+            <div class="tile-txt">
+              <h3>Peixe inteiro na brasa</h3>
+              <p>O peixe do dia, temperado simples.</p>
+              <span class="preco">640 MT</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Menu completo -->
+    <section class="secao secao-espuma" id="menu">
+      <div class="wrap">
+        <header class="cab reveal">
+          <p class="etiqueta">Menu</p>
+          <h2>O que há para comer</h2>
+          <p class="nota">Preços em meticais (MT). Toca em “Pedir” para enviar o pedido pelo WhatsApp.</p>
+        </header>
+
+        <div class="filtros reveal" role="group" aria-label="Categorias do menu">
+          <button type="button" class="filtro" data-filtro="todos" aria-pressed="true">Tudo</button>
+          <button type="button" class="filtro" data-filtro="marisco" aria-pressed="false">Marisco</button>
+          <button type="button" class="filtro" data-filtro="grelhados" aria-pressed="false">Grelhados</button>
+          <button type="button" class="filtro" data-filtro="acompanhamentos" aria-pressed="false">Acompanhamentos</button>
+          <button type="button" class="filtro" data-filtro="bebidas" aria-pressed="false">Bebidas</button>
+        </div>
+
+        <ul class="lista">
+          <li data-cat="marisco" data-nome="Camarão tigre grelhado" data-preco="850">
+            <div class="linha"><h3>Camarão tigre grelhado</h3><span class="pontos"></span><span class="preco">850 MT</span></div>
+            <p class="desc">Manteiga de alho, piri-piri e limão.</p>
+            <a class="pedir" href="#" data-wa>Pedir</a>
+          </li>
+          <li data-cat="marisco" data-nome="Caril de caranguejo" data-preco="720">
+            <div class="linha"><h3>Caril de caranguejo</h3><span class="pontos"></span><span class="preco">720 MT</span></div>
+            <p class="desc">Molho de coco e caril, com arroz branco.</p>
+            <a class="pedir" href="#" data-wa>Pedir</a>
+          </li>
+          <li data-cat="marisco" data-nome="Lulas grelhadas" data-preco="560">
+            <div class="linha"><h3>Lulas grelhadas</h3><span class="pontos"></span><span class="preco">560 MT</span></div>
+            <p class="desc">Com azeite, alho e salsa.</p>
+            <a class="pedir" href="#" data-wa>Pedir</a>
+          </li>
+          <li data-cat="marisco" data-nome="Camarão frito" data-preco="520">
+            <div class="linha"><h3>Camarão frito</h3><span class="pontos"></span><span class="preco">520 MT</span></div>
+            <p class="desc">Porção para partilhar, com molho da casa.</p>
+            <a class="pedir" href="#" data-wa>Pedir</a>
+          </li>
+          <li data-cat="grelhados" data-nome="Peixe inteiro na brasa" data-preco="640">
+            <div class="linha"><h3>Peixe inteiro na brasa</h3><span class="pontos"></span><span class="preco">640 MT</span></div>
+            <p class="desc">Peixe do dia, limão e alho.</p>
+            <a class="pedir" href="#" data-wa>Pedir</a>
+          </li>
+          <li data-cat="grelhados" data-nome="Frango à zambeziana" data-preco="480">
+            <div class="linha"><h3>Frango à zambeziana</h3><span class="pontos"></span><span class="preco">480 MT</span></div>
+            <p class="desc">Marinado em leite de coco e piri-piri.</p>
+            <a class="pedir" href="#" data-wa>Pedir</a>
+          </li>
+          <li data-cat="grelhados" data-nome="Espetada mista" data-preco="590">
+            <div class="linha"><h3>Espetada mista</h3><span class="pontos"></span><span class="preco">590 MT</span></div>
+            <p class="desc">Frango, carne e legumes na brasa.</p>
+            <a class="pedir" href="#" data-wa>Pedir</a>
+          </li>
+          <li data-cat="acompanhamentos" data-nome="Arroz de coco" data-preco="120">
+            <div class="linha"><h3>Arroz de coco</h3><span class="pontos"></span><span class="preco">120 MT</span></div>
+            <p class="desc">Solto e perfumado.</p>
+            <a class="pedir" href="#" data-wa>Pedir</a>
+          </li>
+          <li data-cat="acompanhamentos" data-nome="Matapa" data-preco="180">
+            <div class="linha"><h3>Matapa</h3><span class="pontos"></span><span class="preco">180 MT</span></div>
+            <p class="desc">Folha de mandioca com amendoim e coco.</p>
+            <a class="pedir" href="#" data-wa>Pedir</a>
+          </li>
+          <li data-cat="acompanhamentos" data-nome="Xima de milho" data-preco="90">
+            <div class="linha"><h3>Xima de milho</h3><span class="pontos"></span><span class="preco">90 MT</span></div>
+            <p class="desc">Papa de milho branca.</p>
+            <a class="pedir" href="#" data-wa>Pedir</a>
+          </li>
+          <li data-cat="acompanhamentos" data-nome="Batata frita" data-preco="110">
+            <div class="linha"><h3>Batata frita</h3><span class="pontos"></span><span class="preco">110 MT</span></div>
+            <p class="desc">Cortada na hora.</p>
+            <a class="pedir" href="#" data-wa>Pedir</a>
+          </li>
+          <li data-cat="bebidas" data-nome="Sumo de manga" data-preco="110">
+            <div class="linha"><h3>Sumo de manga</h3><span class="pontos"></span><span class="preco">110 MT</span></div>
+            <p class="desc">Fruta natural.</p>
+            <a class="pedir" href="#" data-wa>Pedir</a>
+          </li>
+          <li data-cat="bebidas" data-nome="Cerveja 2M" data-preco="90">
+            <div class="linha"><h3>Cerveja 2M</h3><span class="pontos"></span><span class="preco">90 MT</span></div>
+            <p class="desc">Garrafa 340 ml, bem gelada.</p>
+            <a class="pedir" href="#" data-wa>Pedir</a>
+          </li>
+          <li data-cat="bebidas" data-nome="Refrigerante" data-preco="70">
+            <div class="linha"><h3>Refrigerante</h3><span class="pontos"></span><span class="preco">70 MT</span></div>
+            <p class="desc">Lata ou garrafa.</p>
+            <a class="pedir" href="#" data-wa>Pedir</a>
+          </li>
+          <li data-cat="bebidas" data-nome="Água" data-preco="40">
+            <div class="linha"><h3>Água</h3><span class="pontos"></span><span class="preco">40 MT</span></div>
+            <p class="desc">Com ou sem gás.</p>
+            <a class="pedir" href="#" data-wa>Pedir</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. Sobre -->
+    <section class="secao" id="sobre">
+      <div class="wrap sobre">
+        <div class="sobre-foto reveal" style="--img:url('sobre.jpg')" role="img" aria-label="Cozinha e brasa do restaurante"></div>
+        <div class="sobre-txt reveal">
+          <p class="etiqueta">Sobre nós</p>
+          <h2>Peixe e marisco como se come em casa</h2>
+          <p>Cozinhamos o que chega do mercado no próprio dia, na brasa e sem complicar. O tempero é simples, o piri-piri vem à parte e a porção é para matar a fome.</p>
+          <ul class="pontos-lista">
+            <li>Produto do dia, preparado na hora</li>
+            <li>Brasa a carvão para o peixe e o frango</li>
+            <li>Sala interior e esplanada</li>
+            <li>Mesas para grupos, com reserva</li>
+          </ul>
+          <a class="btn btn-piri" href="#reservas">Reservar mesa</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Fotos -->
+    <section class="secao secao-indico" id="galeria">
+      <div class="wrap">
+        <header class="cab reveal">
+          <p class="etiqueta etiqueta-sol">Fotos</p>
+          <h2>A casa e a mesa</h2>
+        </header>
+        <div class="galeria">
+          <button type="button" class="g reveal" data-src="galeria-1.jpg" style="--img:url('galeria-1.jpg')" aria-label="Abrir foto 1"></button>
+          <button type="button" class="g reveal" data-src="galeria-2.jpg" style="--img:url('galeria-2.jpg')" aria-label="Abrir foto 2"></button>
+          <button type="button" class="g reveal" data-src="galeria-3.jpg" style="--img:url('galeria-3.jpg')" aria-label="Abrir foto 3"></button>
+          <button type="button" class="g reveal" data-src="galeria-4.jpg" style="--img:url('galeria-4.jpg')" aria-label="Abrir foto 4"></button>
+          <button type="button" class="g reveal" data-src="galeria-5.jpg" style="--img:url('galeria-5.jpg')" aria-label="Abrir foto 5"></button>
+          <button type="button" class="g reveal" data-src="galeria-6.jpg" style="--img:url('galeria-6.jpg')" aria-label="Abrir foto 6"></button>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      AVALIAÇÕES DE CLIENTES
+      Só publica avaliações reais, com autorização de quem as escreveu.
+      Quando tiveres, copia este bloco para dentro de uma <section class="secao"> e preenche:
+
+      <blockquote class="aval">
+        <p>"Texto real da avaliação."</p>
+        <footer>Nome do cliente, onde deixou a avaliação</footer>
+      </blockquote>
+    -->
+
+    <!-- 6. Reservas -->
+    <section class="secao secao-espuma" id="reservas">
+      <div class="wrap reservas">
+        <header class="cab reveal">
+          <p class="etiqueta">Reservas</p>
+          <h2>Reserve a sua mesa</h2>
+          <p class="nota">Preencha os dados e abrimos o WhatsApp com a mensagem pronta. A reserva só fica confirmada quando respondermos.</p>
+        </header>
+
+        <form id="form-reserva" class="form reveal" novalidate>
+          <div class="campo">
+            <label for="r-nome">Nome</label>
+            <input id="r-nome" name="nome" type="text" autocomplete="name" required>
+          </div>
+          <div class="campo">
+            <label for="r-pessoas">Pessoas</label>
+            <select id="r-pessoas" name="pessoas">
+              <option>1</option><option selected>2</option><option>3</option><option>4</option>
+              <option>5</option><option>6</option><option>7</option><option>8</option>
+              <option>9 ou mais</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="r-data">Data</label>
+            <input id="r-data" name="data" type="date" required>
+          </div>
+          <div class="campo">
+            <label for="r-hora">Hora</label>
+            <select id="r-hora" name="hora" required disabled>
+              <option value="">Escolha primeiro a data</option>
+            </select>
+          </div>
+          <div class="campo campo-largo">
+            <label for="r-obs">Observações (opcional)</label>
+            <textarea id="r-obs" name="obs" rows="3" placeholder="Esplanada, aniversário, cadeira de bebé…"></textarea>
+          </div>
+          <p class="form-msg" id="form-msg" role="alert"></p>
+          <div class="campo-largo">
+            <button class="btn btn-piri" type="submit">Enviar pelo WhatsApp</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- 7. Perguntas frequentes (edita as respostas conforme o restaurante) -->
+    <section class="secao" id="perguntas">
+      <div class="wrap faq-wrap">
+        <header class="cab reveal">
+          <p class="etiqueta">Perguntas</p>
+          <h2>Antes de vir</h2>
+        </header>
+        <div class="faq reveal">
+          <details>
+            <summary>Preciso de reservar?</summary>
+            <p>Ao fim de semana e para grupos de 6 ou mais, recomendamos. Nos outros dias costuma haver mesa, mas pode esperar alguns minutos.</p>
+          </details>
+          <details>
+            <summary>Como posso pagar?</summary>
+            <p>Aceitamos numerário, M-Pesa, e-Mola e cartão. Confirme no WhatsApp se precisar de fatura com NUIT.</p>
+          </details>
+          <details>
+            <summary>Fazem entregas?</summary>
+            <p>Sim, na zona central de Maputo. Faça o pedido pelo WhatsApp e indicamos o valor da entrega.</p>
+          </details>
+          <details>
+            <summary>Têm opções sem marisco?</summary>
+            <p>Sim: frango, espetada mista, matapa, xima e batata frita.</p>
+          </details>
+          <details>
+            <summary>Posso levar crianças?</summary>
+            <p>Claro. Temos cadeiras para bebés, é só avisar na reserva.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Contacto -->
+    <section class="secao secao-espuma" id="contacto">
+      <div class="wrap contacto">
+        <div class="reveal">
+          <p class="etiqueta">Contacto</p>
+          <h2>Onde estamos</h2>
+          <dl class="dados">
+            <div><dt>Morada</dt><dd data-endereco></dd></div>
+            <div><dt>Telefone e WhatsApp</dt><dd><a href="#" data-tel-link><span data-tel></span></a></dd></div>
+            <div class="redes">
+              <dt>Redes</dt>
+              <dd>
+                <a href="#" data-rede="instagram" hidden>Instagram</a>
+                <a href="#" data-rede="facebook" hidden>Facebook</a>
+              </dd>
+            </div>
+          </dl>
+          <div class="acoes">
+            <a class="btn btn-piri" href="#" data-mapa target="_blank" rel="noopener">Ver no Google Maps</a>
+            <a class="btn btn-escuro" href="#" data-wa data-msg="Olá! Gostaria de uma informação.">Falar pelo WhatsApp</a>
+          </div>
+          <!--
+            Mapa dentro da página: no Google Maps abre o local, carrega em Partilhar > Incorporar um mapa,
+            copia o código <iframe> e cola aqui. Funciona no GitHub e no Cloudflare.
+          -->
+        </div>
+
+        <div class="reveal">
+          <h3 class="h-horario">Horário</h3>
+          <table class="horario" id="tabela-horario">
+            <caption class="so-leitor">Horário de funcionamento</caption>
+            <tbody></tbody>
+          </table>
+          <noscript><p>Consulte o horário por WhatsApp.</p></noscript>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="capulana" aria-hidden="true"></div>
+  <footer class="rodape">
+    <div class="wrap rodape-in">
+      <p><strong data-nome>Maré e Brasa</strong> · Marisco e grelhados em Maputo</p>
+      <p class="mini">© <span id="ano"></span> Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a class="wa-flutuante" href="#" data-wa data-msg="Olá! Gostaria de fazer um pedido." aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 3C7.03 3 3 6.58 3 11c0 1.9.72 3.65 1.92 5L4 21l4.4-1.5c1.1.35 2.4.5 3.6.5 4.97 0 9-3.58 9-8S16.97 3 12 3z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <dialog id="lb" class="lb" aria-label="Foto ampliada">
+    <button type="button" class="lb-fechar" aria-label="Fechar">×</button>
+    <img alt="">
+  </dialog>
+</body>
+</html>
